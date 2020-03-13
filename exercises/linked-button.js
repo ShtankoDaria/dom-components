@@ -2,6 +2,18 @@ try {
 
   function linkedButton(arr) {
     // write me! (after studying some examples ;)
+   
+
+    const aEl = document.createElement('a');
+    aEl.href = arr[1];
+    aEl.target = "_blank";
+
+    const buttonEl = document.createElement('button');
+    buttonEl.innerText = 'learn about ' + arr[0];
+    aEl.appendChild(buttonEl)
+
+    return aEl;
+
   }
 
 

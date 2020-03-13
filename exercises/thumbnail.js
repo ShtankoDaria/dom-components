@@ -2,6 +2,19 @@ try {
 
   function thumbnail(obj) {
     // write me!
+    const divEl = document.createElement('div');
+    divEl.className = 'thumbnail-container';
+   // const aEl = document.createElement('a');
+   /* aEl.href = obj.src;
+    aEl.target = "_blank";*/
+    
+
+    const image = document.createElement('img');
+    image.src = obj.src;
+    image.className = "thumbnail to-the-right";
+    divEl.appendChild(image);
+    //aEl.appendChild(image);
+    return divEl;
   }
 
 
